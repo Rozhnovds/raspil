@@ -1,0 +1,56 @@
+//* ==================================== *//
+//* ========== GLOBAL MIXINS =========== *//
+//* ==================================== *//
+
+@use 'sass:math';
+
+// ===== Convert Photoshop tracking to letter spacing =====
+
+@mixin l-spacing ( $tracking-psd, $font-size) {
+	letter-spacing: #{( $tracking-psd / 1000 * $font-size )}px;
+}
+// @include l-spacing ( 5, 15 );
+
+
+@mixin l-spacing-em ( $tracking-psd ) {
+	letter-spacing: #{( $tracking-psd / 1000 * 1em )}em;
+}
+// @include l-spacing-em ( 5 );
+
+
+// ===== Convert Photoshop leading to line-height ===== 
+
+@mixin l-height ( $leading-psd, $font-size) {
+	line-height: #{ $leading-psd / $font-size };
+}
+
+// @include l-height ( 30, 15 );
+
+
+
+// ===== Convert Photoshop shadow to CSS ===== 
+
+@mixin b-shadow ( $angle, $distance, $spread, $size, $color ) {
+
+	$offsetX: 999 !default;
+	$offsetY: 999 !default;
+	$blur: 999 !default;
+	$spread: 999 !default;
+	
+	$angle:  (( 180 - $angle ) * 3.14 / 180) ;
+	$offsetX: #{math.round(math.cos( $angle ) * $distance)}px;
+	$offsetY: #{math.round( math.sin( $angle ) * $distance )}px;
+	$blur: #{ $size - $spread }px;
+	$spread: #{ $size * $spread / 100 }px;
+	
+	box-shadow: #{$offsetX $offsetY $blur $spread $color};
+	
+}
+
+// @include b-shadow ( 120, 5, 0, 20 );
+
+
+
+//* =================================== *//
+//* ========== LOCAL MIXINS =========== *//
+//* =================================== *//
