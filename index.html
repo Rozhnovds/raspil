@@ -25,9 +25,9 @@
 
 			<nav class="header__nav nav">
 				<ul class="nav__menu">
-					<li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">Материалы</a></li>
-					<li class="nav__item"><a href="#" class="nav__link">О производстве</a></li>
+					<li class="nav__item"><a href="#service" class="nav__link">Услуги</a></li>
+					<li class="nav__item"><a href="#vendors" class="nav__link">Материалы</a></li>
+					<li class="nav__item"><a href="#production" class="nav__link">О производстве</a></li>
 				</ul>
 			</nav>
 
@@ -49,7 +49,9 @@
 							<use xlink:href="assets/img/sprite.svg#phone"></use>
 						</svg>
 					</div>
-					<div class="header__contacts-phone-text">+7 905 399 74 44</div>
+					<div class="header__contacts-phone-text">
+						<a href="tel:+79053997444">+7 905 399 74 44</a>
+					</div>
 				</div>
 				<div class="header__contacts-email">
 					<div class="header__contacts-email-icon">
@@ -57,21 +59,23 @@
 							<use xlink:href="assets/img/sprite.svg#mail"></use>
 						</svg>
 					</div>
-					<div class="header__contacts-email-text">info@raspil-lux.ru</div>
+					<div class="header__contacts-email-text">
+						<a href="mailto:info@raspil-lux.ru">info@raspil-lux.ru</a>
+					</div>
 				</div>
 			</div>
 
 			<div class="header__social">
-				<div class="header__social-whatsapp">
+				<a href="#" class="header__social-whatsapp">
 					<svg class="svg-whatsapp">
 						<use xlink:href="assets/img/sprite.svg#whatsapp"></use>
 					</svg>
-				</div>
-				<div class="header__social-telegramm">
+				</a>
+				<a href="#" class="header__social-telegramm">
 					<svg class="svg-telegramm">
 						<use xlink:href="assets/img/sprite.svg#telegramm"></use>
 					</svg>
-				</div>
+				</a>
 			</div>
 
 		</div>
@@ -83,7 +87,7 @@
 
 <!-- ===== 2. HERO SECTION ===== -->
 
-<section class="hero">
+<section class="hero" id="hero">
 
 	<!-- <div class="devider-block">
 		<span class="devider-block__line"></span>
@@ -127,98 +131,110 @@
 		</div>
 	</div>
 
-		<div class="hero__machine">
+	<div class="hero__machine">
 
-			<div class="hero__machine-tooltip-wrap--1">
-				<div class="hero__machine-tooltip">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-			</div>
-
-			<div class="hero__machine-tooltip-wrap--2">
-				<div class="hero__machine-tooltip">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-			</div>
-
-			<div class="hero__machine-tooltip-wrap--3">
-				<div class="hero__machine-tooltip">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-			</div>
-
-			<div class="hero__machine-image">
-				<img class="img" src="./assets/img/2_hero/hero_image_1.png" alt="Форматно-раскроечный станок">
+		<div class="hero__machine-tooltip-wrap--1">
+			<div class="hero__machine-tooltip">
+				<svg class="svg-plus">
+					<use xlink:href="assets/img/sprite.svg#plus"></use>
+				</svg>
 			</div>
 		</div>
 
-		<div class="container">
-			<div class="hero__info-block info-block">
-				<div class="info-block__list">
-					<!-- 1st item -->
-					<div class="info-block__item">
-						<div class="info-block__icon">
-							<div class="icon-plus">
-								<span class="icon-plus__element"></span>
-								<span class="icon-plus__element"></span>
-							</div>
-						</div>
-						<div class="info-block__text">
-							Готовность —<br><span class="hl">от 1 до 5 дней</span><br>с момента оплаты
-						</div>
-					</div>
-					<!-- 2nd item -->
-					<div class="info-block__item">
-						<div class="info-block__icon">
-							<div class="icon-plus">
-								<span class="icon-plus__element"></span>
-								<span class="icon-plus__element"></span>
-							</div>
-						</div>
-						<div class="info-block__text">
-							<span class="hl">Индивидуальные условия</span> оптовикам и мастерам
-						</div>
-					</div>
-					<!-- 3rd item -->
-					<div class="info-block__item">
-						<div class="info-block__icon">
-							<div class="icon-plus">
-								<span class="icon-plus__element"></span>
-								<span class="icon-plus__element"></span>
-							</div>
-						</div>
-						<div class="info-block__text">
-							<span class="hl">Материалы</span> всегда в <span class="hl">наличии</span> на наших <span class="hl">2-х</span> складах
-						</div>
-					</div>
-					<!-- 4th item -->
-					<div class="info-block__item">
-						<div class="info-block__icon">
-							<div class="icon-plus">
-								<span class="icon-plus__element"></span>
-								<span class="icon-plus__element"></span>
-							</div>
-						</div>
-						<div class="info-block__text">
-							Примем заказ <span class="hl">онлайн</span> и дадим <span class="hl">гарантию качества</span>
-						</div>
-					</div>
-
-				</div>
+		<div class="hero__machine-tooltip-wrap--2">
+			<div class="hero__machine-tooltip">
+				<svg class="svg-plus">
+					<use xlink:href="assets/img/sprite.svg#plus"></use>
+				</svg>
 			</div>
 		</div>
+
+		<div class="hero__machine-tooltip-wrap--3">
+			<div class="hero__machine-tooltip">
+				<svg class="svg-plus">
+					<use xlink:href="assets/img/sprite.svg#plus"></use>
+				</svg>
+			</div>
+		</div>
+
+		<div class="hero__machine-image">
+			<img class="img" src="./assets/img/2_hero/hero_image_1.png" alt="Форматно-раскроечный станок">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="hero__info-block info-block">
+			<div class="info-block__list">
+				<!-- 1st item -->
+				<div class="info-block__item">
+					<div class="info-block__icon">
+						<div class="icon-plus">
+							<span class="icon-plus__element"></span>
+							<span class="icon-plus__element"></span>
+						</div>
+					</div>
+					<div class="info-block__text">
+						Готовность —<br><span class="hl">от 1 до 5 дней</span><br>с момента оплаты
+					</div>
+				</div>
+				<!-- 2nd item -->
+				<div class="info-block__item">
+					<div class="info-block__icon">
+						<div class="icon-plus">
+							<span class="icon-plus__element"></span>
+							<span class="icon-plus__element"></span>
+						</div>
+					</div>
+					<div class="info-block__text">
+						<span class="hl">Индивидуальные условия</span> оптовикам и мастерам
+					</div>
+				</div>
+				<!-- 3rd item -->
+				<div class="info-block__item">
+					<div class="info-block__icon">
+						<div class="icon-plus">
+							<span class="icon-plus__element"></span>
+							<span class="icon-plus__element"></span>
+						</div>
+					</div>
+					<div class="info-block__text">
+						<span class="hl">Материалы</span> всегда в <span class="hl">наличии</span> на наших <span class="hl">2-х</span> складах
+					</div>
+				</div>
+				<!-- 4th item -->
+				<div class="info-block__item">
+					<div class="info-block__icon">
+						<div class="icon-plus">
+							<span class="icon-plus__element"></span>
+							<span class="icon-plus__element"></span>
+						</div>
+					</div>
+					<div class="info-block__text">
+						Примем заказ <span class="hl">онлайн</span> и дадим <span class="hl">гарантию качества</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="hero__button-order">
+			<button class="btn btn--hero-order">БЛАНК ЗАКАЗА</button>
+	</div>
+
+
 </section>
 
 
 <!-- ===== 3. SERVICE SECTION ===== -->
 
-<section class="service">
+<section class="service" id="service">
+	<!-- button on-top -->
+	<a href="#hero" class="service__button-on-top">
+		<svg class="svg-on-top">
+			<use xlink:href="assets/img/sprite.svg#on-top"></use>
+		</svg>
+	</a>
 
 	<!-- service__basic -->
 	<div class="service__basic">
@@ -481,38 +497,41 @@
 <!-- ===== 5. REQUEST SECTION ===== -->
 
 <section class="request">
-	<div class="request__background-block background-block--blue">
+
+	<div class="request__background-block">
 		<div class="container">
 			<div class="request__inner">
+				<!-- title -->
 				<div class="request__title">
 					ОСТАВЬТЕ ЗАЯВКУ
 					<span class="second-line"><span class="hl">— </span>МЫ СВЯЖЕМСЯ С ВАМИ</span>
 					В ТЕЧЕНИЕ <span class="hl">10 МИНУТ:</span>
 				</div>
+				<!-- form -->
 				<div class="request__form">
-					<form action="#" class="form-request">
+					<form action="#" class="standart-form">
 						<!-- name -->
-						<input class="form-request__input" type="text" name="name" placeholder="Введите ваше имя:">
+						<input class="standart-form__input" type="text" name="name" placeholder="Введите ваше имя:">
 						<!-- telephone -->
-						<div class="form-request__telephone">
-							<div class="form-request__telephone-phonemask">
-								<span class="form-request__telephone-flag"></span>
-								<div class="form-request__telephone-prefix">+7</div>
+						<div class="standart-form__telephone">
+							<div class="standart-form__telephone-phonemask">
+								<span class="standart-form__telephone-flag"></span>
+								<div class="standart-form__telephone-prefix">+7</div>
 							</div>
-							<input class="form-request__input-telephone" type="tel" name="tel" placeholder="(999) 999-99-99">
+							<input class="standart-form__input-telephone" type="tel" name="tel" placeholder="(999) 999-99-99">
 						</div>
 						<!-- user agreement -->
-						<div class="form-request__agreement">
-							<input class="form-request__input-checkbox" id="request--agreement" type="checkbox" name="user_agreement">
-							<label for="request--agreement" class="form-request__label">
+						<div class="standart-form__agreement">
+							<input class="standart-form__input-checkbox" id="request--agreement" type="checkbox" name="user_agreement">
+							<label for="request--agreement" class="standart-form__label">
 								Я принимаю условия
 							</label>
-							<a href="#" class="form-request__agreement-link">пользовательского соглашения</a>
+							<a href="#" class="standart-form__agreement-link">пользовательского соглашения</a>
 						</div>
 						<!-- button -->
-						<div class="form-request__button">
-							<div class="btn__wrap btn__wrap--request">
-								<button class="btn btn--request" type="submit">Получить бесплатную консультацию</button>
+						<div class="standart-form__button">
+							<div class="btn__wrap btn__wrap--standart-form">
+								<button class="btn btn--standart-form" type="submit">Получить бесплатную консультацию</button>
 							</div>
 						</div>
 					</form>
@@ -532,7 +551,7 @@
 			<div class="quote__video">
 				<div class="quote__video-player">
 					<iframe width="452" height="254"
-						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=0&mute=1&loop=1&playlist=B1nomdS3WjI" frameborder="0"
+						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=1&mute=1&loop=1&playlist=B1nomdS3WjI" frameborder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
 				</div>
@@ -569,7 +588,7 @@
 
 <!-- ===== 7. VENDORS SECTION ===== -->
 
-<section class="vendors">
+<section class="vendors" id="vendors">
 
 	<div class="vendors__headline headline">
 		<div class="container">
@@ -738,7 +757,7 @@
 
 <!-- ===== 10. PRODUCTION SECTION ===== -->
 
-<section class="production">
+<section class="production" id="production" >
 
 	<div class="production__headline headline">
 		<div class="container">
@@ -831,15 +850,338 @@
 </section>
 
 
+<!-- ===== 11. FAQ SECTION ===== -->
+
+<section class="faq">
+
+	<div class="faq__headline headline">
+		<div class="container">
+			<div class="headline__inner">
+				<h2 class="headline__title">
+					ПОСМОТРИТЕ <span class="hl">ОТВЕТЫ </span>
+					<span class="second-line">НА ЧАСТО ЗАДАВАЕМЫЕ <span class="hl">ВОПРОСЫ:</span></span>
+				</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="faq__main-block">
+			<!-- questions block -->
+			<div class="faq__questions">
+				<div class="questions-faq">
+					<div class="questions-faq__list">
+						<!-- 1st item -->
+						<div class="questions-faq__item">
+							<div class="questions-faq__header">
+								<div class="questions-faq__header-title">
+									<span class="hl">Из чего складывается стоимость</span> услуг распила и кромления?
+								</div>
+								<div class="questions-faq__icon">
+									<div class="icon-plus__wrap">
+										<div class="icon-plus">
+											<span class="icon-plus__element"></span>
+											<span class="icon-plus__element"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="questions-faq__body">
+								<div class="questions-faq__body-answer">
+									Ценообразование складывается из нескольких факторов: выбранный материал производителя ЛДСП + сама услуга (распил/кромление) по кв.м. Точное кол-во кв.м можно просчитать по карте раскроя в зависимости от заказа. Подробнее о других услугах и их стоимости можно ознакомиться в разделе <span class="hl">"Услуги"</span>
+								</div>
+							</div>
+						</div>
+						<!-- 2nd item -->
+						<div class="questions-faq__item">
+							<div class="questions-faq__header">
+								<div class="questions-faq__header-title">
+									Можно ли у вас <span class="hl">приобрести материал?</span>
+								</div>
+								<div class="questions-faq__icon">
+									<div class="icon-plus__wrap">
+										<div class="icon-plus">
+											<span class="icon-plus__element"></span>
+											<span class="icon-plus__element"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="questions-faq__body hidden">
+								<div class="questions-faq__body-answer">
+									Да. Мы предоставляем большой выбор ЛДСП от разных производителей в разном ценовом сегменте. Весь материал у нас хранится на складах, а также пополняется под заказ.<br>
+									Для упрощения выбора материала, в офисе имеется визуальный стенд с примерами продукции от производителей.<br>
+									Мы удерживаем оптовые цены для наших заказчиков
+								</div>
+							</div>
+						</div>
+						<!-- 3rd item -->
+						<div class="questions-faq__item">
+							<div class="questions-faq__header">
+								<div class="questions-faq__header-title">
+									Как происходит
+									<span class="hl">оформление заказа</span> и
+									<span class="hl">в какие сроки?</span>
+								</div>
+								<div class="questions-faq__icon">
+									<div class="icon-plus__wrap">
+										<div class="icon-plus">
+											<span class="icon-plus__element"></span>
+											<span class="icon-plus__element"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="questions-faq__body hidden">
+								<div class="questions-faq__body-answer">
+									В среднем сроки выполнения заказа 3-5 рабочих дней с момента оформления. Необходимо заполнить <a href="#" class="questions-faq__body-link" target="_blank">"бланк заказа"</a> или отправить деталировку нам по эл. почте <a href="mailto:info@raspillux.ru" class="questions-faq__body-link--underlined">info@raspillux.ru</a> заявку эскизами изделия, указать используемые радиуса, вырезы, скосы или (при наличии) или через <a href="#" class="questions-faq__body-link--underlined" target="_blank">мессенджеры.</a> Чем более полную информацию вы передадите, тем точнее и в более короткий срок будет выполнен Ваш заказ.
+								</div>
+							</div>
+						</div>
+						<!-- 4th item -->
+						<div class="questions-faq__item">
+							<div class="questions-faq__header">
+								<div class="questions-faq__header-title">
+									<span class="hl">Какие условия доставки</span> готового материала до адреса?
+								</div>
+								<div class="questions-faq__icon">
+									<div class="icon-plus__wrap">
+										<div class="icon-plus">
+											<span class="icon-plus__element"></span>
+											<span class="icon-plus__element"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="questions-faq__body hidden">
+								<div class="questions-faq__body-answer">
+									Доставка купленного у нас товара осуществляется в границах города в любой район Волгограда и области. Доставка осуществляется нашим транспортом по минимальным ценам в зависимости от удаленности от нашего склада. Рассчитать стоимость можно через менеджера по телефону: +7 905 399 74 44
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- form block -->
+			<div class="faq__form">
+				<form action="#" class="standart-form">
+					<!-- question -->
+					<input class="standart-form__input" type="text" name="question" placeholder="Введите ваш личный вопрос:">
+					<!-- name -->
+					<input class="standart-form__input" type="text" name="name" placeholder="Введите ваше имя:">
+					<!-- telephone -->
+					<div class="standart-form__telephone">
+						<div class="standart-form__telephone-phonemask">
+							<span class="standart-form__telephone-flag"></span>
+							<div class="standart-form__telephone-prefix">+7</div>
+						</div>
+						<input class="standart-form__input-telephone" type="tel" name="tel" placeholder="(999) 999-99-99">
+					</div>
+					<!-- user agreement -->
+					<div class="standart-form__agreement">
+						<input class="standart-form__input-checkbox" id="request--agreement" type="checkbox" name="user_agreement">
+						<label for="request--agreement" class="standart-form__label">
+							Я принимаю условия
+						</label>
+						<a href="#" class="standart-form__agreement-link">пользовательского соглашения</a>
+					</div>
+					<!-- button -->
+					<div class="standart-form__button">
+						<div class="btn__wrap btn__wrap--standart-form">
+							<button class="btn btn--standart-form" type="submit">Задать свой вопрос</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
 
 
+<!-- ===== 12. CONTACTS SECTION ===== -->
 
+<section class="contacts">
+	<div class="container">
+		<div class="contacts__inner">
 
+			<div class="contacts__content">
+				<h2 class="contacts__title">
+					НАШИ <span class="hl">КОНТАКТЫ:</span>
+				</h2>
+				<!-- phone -->
+				<div class="contacts__phone">
+					<div class="contacts__phone-icon">
+						<svg class="svg-phone">
+							<use xlink:href="assets/img/sprite.svg#phone"></use>
+						</svg>
+					</div>
+					<a href="tel:+79053997444" class="contacts__phone-text">
+						+7 905 399 74 44
+					</a>
+				</div>
+				<!-- address -->
+				<div class="contacts__address">
+					<div class="contacts__address-icon">
+						<svg class="svg-nav">
+							<use xlink:href="assets/img/sprite.svg#nav"></use>
+						</svg>
+					</div>
+					<div class="contacts__address-text">
+						Волгоград, <span class="hl">ул. Революционная, д. 2Д, офис 11</span>
+					</div>
+				</div>
+				<!-- mail -->
+				<div class="contacts__mail">
+					<div class="contacts__mail-icon">
+						<svg class="svg-mail">
+							<use xlink:href="assets/img/sprite.svg#mail"></use>
+						</svg>
+					</div>
+					<a href="mailto:info@raspil-lux.ru" class="contacts__mail-text">
+						info@raspil-lux.ru
+					</a>
+				</div>
+				<!-- button -->
+				<div class="contacts__button btn__wrap">
+					<button class="btn btn--contacts">Связаться</button>
+				</div>
+				<!-- social -->
+				<div class="contacts__social">
+					<a href="#" class="contacts__social-whatsapp">
+						<svg class="svg-whatsapp">
+							<use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+						</svg>
+					</a>
+					<a href="#" class="contacts__social-telegramm">
+						<svg class="svg-telegramm">
+							<use xlink:href="assets/img/sprite.svg#telegramm"></use>
+						</svg>
+					</a>
+					<a href="#" class="contacts__social-instagramm">
+						<svg class="svg-instagramm">
+							<use xlink:href="assets/img/sprite.svg#instagramm"></use>
+						</svg>
+					</a>
+					<a href="#" class="contacts__social-facebook">
+						<svg class="svg-facebook">
+							<use xlink:href="assets/img/sprite.svg#facebook"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+
+			<!-- map -->
+			<div class="contacts__map">
+				<div class="contacts__map-inner">
+					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ae32da16f8ace79568cf908e2da5cf40d9dbc0d251da857e09a8b7f8f22202e&amp;source=constructor" width="560" height="400" frameborder="0"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 </main>
+
+
+<!-- ===== 13. FOOTER ===== -->
+
+<footer class="footer">
+	<div class="container">
+		<div class="footer__inner">
+
+			<!-- info block -->
+			<div class="footer__info">
+				<div class="footer__info-logo">
+					<svg class="svg-logo--footer">
+						<use xlink:href="assets/img/sprite.svg#logo"></use>
+					</svg>
+				</div>
+				<div class="footer__block-list">
+					<div class="footer__block-item">
+						<span class="hl">ИП Чернышова Е.Е.</span>
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">ИНН: </span>344405265528
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">ОГРНИП: </span>320344300029932
+					</div>
+					<div class="footer__block-item">
+						© 2005–2022
+					</div>
+					<div class="footer__block-item">
+						Копирование материалов запрещено
+					</div>
+					<div class="footer__block-item">
+						<a href="#" class="footer__info-link">Политика конфиденциальности</a>
+					</div>
+				</div>
+
+
+
+			</div>
+
+			<!-- working-hours block -->
+			<div class="footer__working-hours footer__block">
+				<span class="footer__working-hours-frame"></span>
+
+				<div class="footer__block-title">РЕЖИМ РАБОТЫ:</div>
+				<div class="footer__block-list">
+					<div class="footer__block-item">
+						<span class="hl">Понедельник:</span> 09:00 до 17:00
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Вторник:</span> 09:00 до 17:00
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Среда:</span> 09:00 до 17:00
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Четверг:</span> 09:00 до 17:00
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Пятница:</span> 09:00 до 17:00
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Суббота: </span> <span class="hl--blue">под заказ</span>
+					</div>
+					<div class="footer__block-item">
+						<span class="hl">Воскресенье: </span> <span class="hl--blue">выходной</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- site map block-->
+			<div class="footer__site-map footer__block">
+				<div class="footer__block-title">КАРТА САЙТА:</div>
+				<div class="footer__block-list">
+					<div class="footer__block-item">Услуги</div>
+					<div class="footer__block-item">Сотрудничество</div>
+					<div class="footer__block-item">Партнеры</div>
+					<div class="footer__block-item">Просчет стоимости</div>
+					<div class="footer__block-item">Срочный заказ</div>
+					<div class="footer__block-item">О производстве</div>
+					<div class="footer__block-item">Вопрос / ответ</div>
+				</div>
+			</div>
+
+			<!-- extra services block-->
+			<div class="footer__extra footer__block">
+				<div class="footer__block-title">ДОП УСЛУГИ:</div>
+				<div class="footer__block-list">
+					<div class="footer__block-item">Двери-купе</div>
+					<div class="footer__block-item">Фасад МДФ</div>
+					<div class="footer__block-item">Столешницы</div>
+					<div class="footer__block-item">Стекла / зеркала</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
 
