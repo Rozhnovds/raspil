@@ -135,25 +135,34 @@
 
 		<div class="hero__machine-tooltip-wrap--1">
 			<div class="hero__machine-tooltip">
-				<svg class="svg-plus">
-					<use xlink:href="assets/img/sprite.svg#plus"></use>
-				</svg>
+				<div class="hero__machine-tooltip-icon">
+					<svg class="svg-plus">
+						<use xlink:href="assets/img/sprite.svg#plus"></use>
+					</svg>
+				</div>
+				<span class="hero__machine-tooltip-content"></span>
 			</div>
 		</div>
 
 		<div class="hero__machine-tooltip-wrap--2">
 			<div class="hero__machine-tooltip">
-				<svg class="svg-plus">
-					<use xlink:href="assets/img/sprite.svg#plus"></use>
-				</svg>
+				<div class="hero__machine-tooltip-icon">
+					<svg class="svg-plus">
+						<use xlink:href="assets/img/sprite.svg#plus"></use>
+					</svg>
+				</div>
+				<span class="hero__machine-tooltip-content"></span>
 			</div>
 		</div>
 
 		<div class="hero__machine-tooltip-wrap--3">
 			<div class="hero__machine-tooltip">
-				<svg class="svg-plus">
-					<use xlink:href="assets/img/sprite.svg#plus"></use>
-				</svg>
+				<div class="hero__machine-tooltip-icon">
+					<svg class="svg-plus">
+						<use xlink:href="assets/img/sprite.svg#plus"></use>
+					</svg>
+				</div>
+				<span class="hero__machine-tooltip-content"></span>
 			</div>
 		</div>
 
@@ -219,7 +228,7 @@
 	</div>
 
 	<div class="hero__button-order">
-			<button class="btn btn--hero-order">БЛАНК ЗАКАЗА</button>
+			<button class="btn btn--hero-order animation-flash">БЛАНК ЗАКАЗА</button>
 	</div>
 
 
@@ -453,9 +462,9 @@
 	<div class="container">
 
 		<div class="benefits__main-block">
-			<div class="benefits__title">
+			<h2 class="benefits__title">
 				ПОЧЕМУ <span class="second-line">СОТРУДНИЧЕСТВО</span>С НАМИ <span class="hl">— ВЫГОДНО:</span>
-			</div>
+			</h2>
 			
 			<div class="benefits__list">
 				<!-- 1st item -->
@@ -502,11 +511,11 @@
 		<div class="container">
 			<div class="request__inner">
 				<!-- title -->
-				<div class="request__title">
+				<h2 class="request__title">
 					ОСТАВЬТЕ ЗАЯВКУ
 					<span class="second-line"><span class="hl">— </span>МЫ СВЯЖЕМСЯ С ВАМИ</span>
 					В ТЕЧЕНИЕ <span class="hl">10 МИНУТ:</span>
-				</div>
+				</h2>
 				<!-- form -->
 				<div class="request__form">
 					<form action="#" class="standart-form">
@@ -551,7 +560,7 @@
 			<div class="quote__video">
 				<div class="quote__video-player">
 					<iframe width="452" height="254"
-						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=1&mute=1&loop=1&playlist=B1nomdS3WjI" frameborder="0"
+						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=1&mute=1&loop=1&playlist=B1nomdS3WjI" 
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
 				</div>
@@ -747,7 +756,7 @@
 				Заполните эту форму если у Вас что-то пошло не по плану или услуга нужна в максимально короткие сроки
 			</div>
 			<div class="order__button">
-				<button class="btn btn--order">Отправить заявку на срочный просчет</button>
+				<button class="btn btn--order animation-flash">Отправить заявку на срочный просчет</button>
 			</div>
 		</div>
 
@@ -980,8 +989,8 @@
 					</div>
 					<!-- user agreement -->
 					<div class="standart-form__agreement">
-						<input class="standart-form__input-checkbox" id="request--agreement" type="checkbox" name="user_agreement">
-						<label for="request--agreement" class="standart-form__label">
+						<input class="standart-form__input-checkbox" id="faq--agreement" type="checkbox" name="user_agreement">
+						<label for="faq--agreement" class="standart-form__label">
 							Я принимаю условия
 						</label>
 						<a href="#" class="standart-form__agreement-link">пользовательского соглашения</a>
@@ -1074,7 +1083,7 @@
 			<!-- map -->
 			<div class="contacts__map">
 				<div class="contacts__map-inner">
-					<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0ae32da16f8ace79568cf908e2da5cf40d9dbc0d251da857e09a8b7f8f22202e&amp;source=constructor" width="560" height="400" frameborder="0"></iframe>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ae32da16f8ace79568cf908e2da5cf40d9dbc0d251da857e09a8b7f8f22202e&amp;width=560&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 				</div>
 			</div>
 		</div>
@@ -1097,91 +1106,86 @@
 						<use xlink:href="assets/img/sprite.svg#logo"></use>
 					</svg>
 				</div>
-				<div class="footer__block-list">
-					<div class="footer__block-item">
-						<span class="hl">ИП Чернышова Е.Е.</span>
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">ИНН: </span>344405265528
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">ОГРНИП: </span>320344300029932
-					</div>
-					<div class="footer__block-item">
-						© 2005–2022
-					</div>
-					<div class="footer__block-item">
-						Копирование материалов запрещено
-					</div>
-					<div class="footer__block-item">
-						<a href="#" class="footer__info-link">Политика конфиденциальности</a>
-					</div>
-				</div>
-
-
-
+				<!-- 1st block -->
+				<ul class="footer__block-list">
+					<li class="footer__block-item"><span class="hl">ИП Чернышова Е.Е.</span></li>
+					<li class="footer__block-item"><span class="hl">ИНН: </span>344405265528</li>
+					<li class="footer__block-item"><span class="hl">ОГРНИП: </span>320344300029932</li>
+				</ul>
+				<!-- 2nd block -->
+				<ul class="footer__block-list">
+					<li class="footer__block-item">© 2005–2022</li>
+					<li class="footer__block-item">Копирование материалов запрещено</li>
+					<li class="footer__block-item"><a href="#" class="footer__info-link">Политика конфиденциальности</a></li>
+				</ul>
 			</div>
 
 			<!-- working-hours block -->
 			<div class="footer__working-hours footer__block">
 				<span class="footer__working-hours-frame"></span>
 
-				<div class="footer__block-title">РЕЖИМ РАБОТЫ:</div>
-				<div class="footer__block-list">
-					<div class="footer__block-item">
-						<span class="hl">Понедельник:</span> 09:00 до 17:00
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Вторник:</span> 09:00 до 17:00
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Среда:</span> 09:00 до 17:00
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Четверг:</span> 09:00 до 17:00
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Пятница:</span> 09:00 до 17:00
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Суббота: </span> <span class="hl--blue">под заказ</span>
-					</div>
-					<div class="footer__block-item">
-						<span class="hl">Воскресенье: </span> <span class="hl--blue">выходной</span>
-					</div>
-				</div>
+				<span class="footer__block-title">РЕЖИМ РАБОТЫ:</span>
+				<ul class="footer__block-list">
+					<li class="footer__block-item"><span class="hl">Понедельник:</span> 09:00 до 17:00</li>
+					<li class="footer__block-item"><span class="hl">Вторник:</span> 09:00 до 17:00</li>
+					<li class="footer__block-item"><span class="hl">Среда:</span> 09:00 до 17:00</li>
+					<li class="footer__block-item"><span class="hl">Четверг:</span> 09:00 до 17:00</li>
+					<li class="footer__block-item"><span class="hl">Пятница:</span> 09:00 до 17:00</li>
+					<li class="footer__block-item"><span class="hl">Суббота: </span> <span class="hl--blue">под заказ</span></li>
+					<li class="footer__block-item"><span class="hl">Воскресенье: </span> <span class="hl--blue">выходной</span></li>
+				</ul>
 			</div>
 
 			<!-- site map block-->
 			<div class="footer__site-map footer__block">
 				<div class="footer__block-title">КАРТА САЙТА:</div>
-				<div class="footer__block-list">
-					<div class="footer__block-item">Услуги</div>
-					<div class="footer__block-item">Сотрудничество</div>
-					<div class="footer__block-item">Партнеры</div>
-					<div class="footer__block-item">Просчет стоимости</div>
-					<div class="footer__block-item">Срочный заказ</div>
-					<div class="footer__block-item">О производстве</div>
-					<div class="footer__block-item">Вопрос / ответ</div>
-				</div>
+				<ul class="footer__block-list">
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Услуги</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Сотрудничество</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Партнеры</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Просчет стоимости</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Срочный заказ</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">О производстве</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Вопрос / ответ</a>
+					</li>
+				</ul>
 			</div>
 
 			<!-- extra services block-->
 			<div class="footer__extra footer__block">
 				<div class="footer__block-title">ДОП УСЛУГИ:</div>
-				<div class="footer__block-list">
-					<div class="footer__block-item">Двери-купе</div>
-					<div class="footer__block-item">Фасад МДФ</div>
-					<div class="footer__block-item">Столешницы</div>
-					<div class="footer__block-item">Стекла / зеркала</div>
-				</div>
+				<ul class="footer__block-list">
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Двери-купе</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Фасад МДФ</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Столешницы</a>
+					</li>
+					<li class="footer__block-item">
+						<a href="#" class="footer__block-link">Стекла / зеркала</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
 </footer>
 
-
 <script src="assets/js/main.js"></script>
 </body>
 </html>
-

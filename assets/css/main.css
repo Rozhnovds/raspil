@@ -259,6 +259,30 @@ body {
 	letter-spacing: normal;
 }
 
+/* ======== GLOBAL STYLES. ANIMATION ======== */
+.animation-flash {
+	overflow: hidden;
+}
+.animation-flash::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 45px;
+	height: 100%;
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+	transform: skewX(-45deg);
+	animation: flash 3s linear infinite;
+}
+
+@keyframes flash {
+	0% {
+		left: -20%;
+	}
+	20%, 100% {
+		left: 120%;
+	}
+}
 /* ======== GLOBAL STYLES. ICONS ======== */
 .icon-plus {
 	position: relative;
@@ -324,9 +348,9 @@ body {
 	height: 50px;
 }
 
-/* ================================= */
-/* =========== 1. HEADER =========== */
-/* ================================= */
+/* ============================== */
+/* ======== 1. HEADER =========== */
+/* ============================== */
 .header {
 	position: fixed;
 	z-index: 10;
@@ -476,27 +500,6 @@ body {
 	justify-content: space-between;
 	align-items: center;
 }
-.hero__button-order {
-	position: absolute;
-	bottom: 270px;
-	right: 20px;
-}
-.hero__button-calc-block {
-	margin-top: 23px;
-}
-.hero__button-calc-tooltip {
-	/* visibility: hidden; */
-	transition: 0.2s ease-in-out;
-	margin: 14px 0 0 10px;
-	font-size: 14px;
-	line-height: 1.5;
-	font-weight: 400;
-	opacity: 0.75;
-}
-.hero__button-calc-tooltip .hl {
-	font-weight: 600;
-	color: #0260e8;
-}
 .hero__desc {
 	width: 265px;
 	font-size: 15px;
@@ -530,23 +533,24 @@ body {
 .hero__machine-image {
 	margin: 75px 0 0 640px;
 	position: relative;
-	/* position: absolute;
-	top: 75px;
-	  	left: 379px;
-	margin-left: 261px; */
 	width: 752px;
 	height: 420px;
 }
 .hero__machine-tooltip {
 	position: relative;
-	display: inline-block;
+}
+.hero__machine-tooltip-icon {
 	line-height: 0;
-	/* blue circle around white cross */
 	border-radius: 50%;
 	background-color: #0260e8;
 }
-.hero__machine-tooltip::before {
-	display: none;
+.hero__machine-tooltip-icon:hover + .hero__machine-tooltip-content::before {
+	display: inline-block;
+	transition: 0.2s ease-in-out;
+	opacity: 1;
+}
+.hero__machine-tooltip-content::before {
+	/* display: none; */
 	content: "";
 	position: absolute;
 	top: 50%;
@@ -563,18 +567,13 @@ body {
 	transition: 0.2s ease-in-out;
 	transition-delay: 0.3s;
 }
-.hero__machine-tooltip:hover::before {
-	display: inline-block;
-	transition: 0.2s ease-in-out;
-	opacity: 1;
-}
 .hero__machine-tooltip-wrap--1 {
 	position: absolute;
 	z-index: 2;
 	left: 43.2%;
 	top: 15.3%;
 }
-.hero__machine-tooltip-wrap--1 .hero__machine-tooltip::before {
+.hero__machine-tooltip-wrap--1 .hero__machine-tooltip-content::before {
 	content: "Электронное изменение угла поворота пилы, позволяет делать максимально точные срезы под любые задачи наших заказчиков";
 	position: absolute;
 	right: 40px;
@@ -586,7 +585,7 @@ body {
 	left: 66%;
 	top: 12.4%;
 }
-.hero__machine-tooltip-wrap--2 .hero__machine-tooltip::before {
+.hero__machine-tooltip-wrap--2 .hero__machine-tooltip-content::before {
 	content: "Расширенный стол с роликом для подачи заготовки + 4 направляющих ролика качения, ускоряют выполнения заказа без брака";
 	position: absolute;
 	left: 40px;
@@ -598,7 +597,7 @@ body {
 	left: 50.4%;
 	top: 92%;
 }
-.hero__machine-tooltip-wrap--3 .hero__machine-tooltip::before {
+.hero__machine-tooltip-wrap--3 .hero__machine-tooltip-content::before {
 	content: "Профессиональное Австрийское оборудование в тандеме с опытными специалистами, позволяют давать гарантию на наши услуги";
 	position: absolute;
 	right: 40px;
@@ -623,9 +622,42 @@ body {
 	height: 125px;
 }
 
+/* btn--hero-calc */
+.hero__button-calc-block {
+	margin-top: 23px;
+}
+
+.hero__button-calc-tooltip {
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+	margin: 14px 0 0 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	font-weight: 400;
+}
+.hero__button-calc-tooltip .hl {
+	font-weight: 600;
+	color: #0260e8;
+}
+
+.btn--hero-calc {
+	transition: 0.2s ease-in-out;
+}
 .btn--hero-calc:hover {
 	background-color: #ffffff;
 	color: #0260e8;
+	transition: 0.2s ease-in-out;
+}
+.btn--hero-calc:hover + .hero__button-calc-tooltip {
+	opacity: 0.75;
+	transition: 0.2s ease-in-out;
+}
+
+/* btn--hero-order */
+.hero__button-order {
+	position: absolute;
+	bottom: 270px;
+	right: 20px;
 }
 
 .btn--hero-order {
@@ -633,6 +665,7 @@ body {
 	height: 40px;
 	font-size: 16px;
 	font-weight: 600;
+	border: none;
 }
 
 .svg-plus {
@@ -648,33 +681,6 @@ body {
 	position: relative;
 }
 
-/* .service__headline {
-	padding: 46px 0;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	&-title {
-		font-size: 40px;
-		font-weight: 700;
-
-		.hl {
-			color: $primary;
-		}
-	}
-
-	&-image {
-		flex: 0 0 260px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-
-	&-image-inner {
-		width: 180px;
-		height: 144px;
-	}
-} */
 .service__basic-headline {
 	padding: 46px 0;
 }
@@ -945,9 +951,9 @@ body {
 	height: 60px;
 }
 
-/* ==================================== */
-/* ========== 6. QUOTE BLOCK ========== */
-/* ==================================== */
+/* ================================== */
+/* ======== 6. QUOTE BLOCK ========== */
+/* ================================== */
 .quote {
 	padding: 40px 0 60px;
 }
@@ -975,6 +981,7 @@ body {
 }
 .quote__video-player iframe {
 	position: relative;
+	border: 0px;
 }
 
 .quote__content {
@@ -1597,7 +1604,7 @@ body {
 /* ======== 13. FOOTER  ======== */
 /* ============================= */
 .footer {
-	padding: 63px 0 80px;
+	padding: 67px 0 80px;
 }
 .footer__inner {
 	display: flex;
@@ -1641,11 +1648,11 @@ body {
 .footer__info .footer__block-list {
 	margin-top: 13px;
 }
+.footer__info .footer__block-list:nth-of-type(2) {
+	margin-top: 49px;
+}
 .footer__info .footer__block-item {
 	line-height: 1.2;
-}
-.footer__info .footer__block-item:nth-child(4) {
-	margin-top: 49px;
 }
 .footer__info-link {
 	font-size: 14px;
