@@ -2,7 +2,8 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<link rel="stylesheet" href="assets/css/media_queries.css">
 	<title>Распил LUX</title>
@@ -13,7 +14,17 @@
 <!-- ===== 1. HEADER ===== -->
 
 <header class="header">
-	
+
+	<div class="header__hamb">
+		<div class="hamb">
+			<div class="hamb__inner">
+				<span class="hamb__bar"></span>
+				<span class="hamb__bar"></span>
+				<span class="hamb__bar"></span>
+			</div>
+		</div>
+	</div>
+
 	<div class="container">
 		<div class="header__inner">
 
@@ -96,11 +107,30 @@
 		<span class="devider-block__line"></span>
 	</div> -->
 
+	<div class="hero__button-order">
+		<button class="btn btn--hero-order animation-flash">БЛАНК ЗАКАЗА</button>
+	</div>
+
 	<div class="hero__background-block">
 		<div class="container">
 			
-			<div class="hero__main-block">
-				<!-- 1st column -->
+			<div class="hero__lead">
+				<h1 class="hero__title">
+					<span class="hl">РАСПИЛ </span>/<span class="hl"> КРОМЛЕНИЕ </span>ЛДСП
+				</h1>
+				<div class="hero__subtitle">
+					по Волгограду и области от 50₽/м² с погрузкой и доставкой <span class="hl">до двери</span>
+				</div>
+			</div>
+
+			<div class="hero__button-calc-block btn__wrap">
+				<button class="btn btn--hero-calc">Рассчитать стоимость</button>
+				<div class="hero__button-calc-tooltip">
+					Дарим <span class="hl">СКИДКУ 5%</span> при заполнении опроса
+				</div>
+			</div>
+
+			<!-- <div class="hero__main-block">
 				<div class="column--1st">
 					<div class="hero__lead">
 						<h1 class="hero__title">
@@ -110,7 +140,6 @@
 							по Волгограду и области от 50₽/м² с погрузкой и доставкой <span class="hl">до двери</span>
 						</div>
 					</div>
-
 					<div class="hero__button-calc-block btn__wrap">
 						<button class="btn btn--hero-calc">Рассчитать стоимость</button>
 						<div class="hero__button-calc-tooltip">
@@ -118,60 +147,69 @@
 						</div>
 					</div>
 				</div>
-
-				<!-- 2nd column -->
 				<div class="column--2nd">
 					<div class="hero__desc">
 						У нас можно закупить материал, <span class="hl">получить просчет за 25 минут,</span> а также бесплатную консультацию по подбору цвета под интерьер
 					</div>
 				</div>
 
-			</div>
+			</div> -->
 
 		</div>
 	</div>
 
-	<div class="hero__machine">
-
-		<div class="hero__machine-tooltip-wrap--1">
-			<div class="hero__machine-tooltip">
-				<div class="hero__machine-tooltip-icon">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-				<span class="hero__machine-tooltip-content"></span>
-			</div>
-		</div>
-
-		<div class="hero__machine-tooltip-wrap--2">
-			<div class="hero__machine-tooltip">
-				<div class="hero__machine-tooltip-icon">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-				<span class="hero__machine-tooltip-content"></span>
-			</div>
-		</div>
-
-		<div class="hero__machine-tooltip-wrap--3">
-			<div class="hero__machine-tooltip">
-				<div class="hero__machine-tooltip-icon">
-					<svg class="svg-plus">
-						<use xlink:href="assets/img/sprite.svg#plus"></use>
-					</svg>
-				</div>
-				<span class="hero__machine-tooltip-content"></span>
-			</div>
-		</div>
-
-		<div class="hero__machine-image">
-			<img class="img" src="./assets/img/2_hero/hero_image_1.png" alt="Форматно-раскроечный станок">
-		</div>
-	</div>
 
 	<div class="container">
+		<!-- machine block -->
+		<div class="hero__machine">
+			<div class="hero__machine-inner">
+				<!-- tooltip-1 -->
+				<div class="hero__machine-tooltip-wrap--1">
+					<div class="hero__machine-tooltip">
+						<div class="hero__machine-tooltip-icon">
+							<svg class="svg-plus">
+								<use xlink:href="assets/img/sprite.svg#plus"></use>
+							</svg>
+						</div>
+						<span class="hero__machine-tooltip-content"></span>
+					</div>
+				</div>
+				<!-- tooltip-2 -->
+				<div class="hero__machine-tooltip-wrap--2">
+					<div class="hero__machine-tooltip">
+						<div class="hero__machine-tooltip-icon">
+							<svg class="svg-plus">
+								<use xlink:href="assets/img/sprite.svg#plus"></use>
+							</svg>
+						</div>
+						<span class="hero__machine-tooltip-content"></span>
+					</div>
+				</div>
+				<!-- tooltip-3 -->
+				<div class="hero__machine-tooltip-wrap--3">
+					<div class="hero__machine-tooltip">
+						<div class="hero__machine-tooltip-icon">
+							<svg class="svg-plus">
+								<use xlink:href="assets/img/sprite.svg#plus"></use>
+							</svg>
+						</div>
+						<span class="hero__machine-tooltip-content"></span>
+					</div>
+				</div>
+				<!-- image -->
+				<div class="hero__machine-image">
+					<img class="img" src="./assets/img/2_hero/hero_image_1.png" alt="Форматно-раскроечный станок">
+				</div>
+			</div>
+		</div>
+
+		<!-- description-block -->
+		<div class="hero__desc">
+			У нас можно закупить материал, <span class="hl">получить просчет за 25 минут,</span> а также бесплатную консультацию по подбору цвета под интерьер
+		</div>
+
+
+		<!-- info-block -->
 		<div class="hero__info-block info-block">
 			<div class="info-block__list">
 				<!-- 1st item -->
@@ -222,16 +260,9 @@
 						Примем заказ <span class="hl">онлайн</span> и дадим <span class="hl">гарантию качества</span>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
-
-	<div class="hero__button-order">
-			<button class="btn btn--hero-order animation-flash">БЛАНК ЗАКАЗА</button>
-	</div>
-
-
 </section>
 
 
@@ -450,8 +481,10 @@
 		</div>
 	</div>
 	<!-- button -->
-	<div class="service__button-consultation btn__wrap">
-		<button class="btn btn--service-consulation">Бесплатная консультация</button>
+	<div class="service__button-consultation">
+		<div class="btn__wrap">
+			<button class="btn btn--service-consulation">Бесплатная консультация</button>
+		</div>
 	</div>
 </section>
 
@@ -463,7 +496,7 @@
 
 		<div class="benefits__main-block">
 			<h2 class="benefits__title">
-				ПОЧЕМУ <span class="second-line">СОТРУДНИЧЕСТВО</span>С НАМИ <span class="hl">— ВЫГОДНО:</span>
+				ПОЧЕМУ <span class="second-line">СОТРУДНИЧЕСТВО </span>С НАМИ <span class="hl">— ВЫГОДНО:</span>
 			</h2>
 			
 			<div class="benefits__list">
@@ -560,7 +593,7 @@
 			<div class="quote__video">
 				<div class="quote__video-player">
 					<iframe width="452" height="254"
-						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=1&mute=1&loop=1&playlist=B1nomdS3WjI" 
+						src="https://www.youtube.com/embed/B1nomdS3WjI?autoplay=0&mute=1&loop=1&playlist=B1nomdS3WjI" 
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 					</iframe>
 				</div>
@@ -1004,6 +1037,13 @@
 				</form>
 			</div>
 		</div>
+
+		<div class="faq__button-question">
+			<div class="btn__wrap">
+				<button class="btn btn--faq-question">Задать свой вопрос</button>
+			</div>
+		</div>
+
 	</div>
 </section>
 
@@ -1015,75 +1055,81 @@
 		<div class="contacts__inner">
 
 			<div class="contacts__content">
-				<h2 class="contacts__title">
-					НАШИ <span class="hl">КОНТАКТЫ:</span>
-				</h2>
-				<!-- phone -->
-				<div class="contacts__phone">
-					<div class="contacts__phone-icon">
-						<svg class="svg-phone">
-							<use xlink:href="assets/img/sprite.svg#phone"></use>
-						</svg>
+
+				<div class="contacts__content-top-wrap">
+					<h2 class="contacts__title">
+						НАШИ <span class="hl">КОНТАКТЫ:</span>
+					</h2>
+					<!-- phone -->
+					<div class="contacts__phone">
+						<div class="contacts__phone-icon">
+							<svg class="svg-phone">
+								<use xlink:href="assets/img/sprite.svg#phone"></use>
+							</svg>
+						</div>
+						<a href="tel:+79053997444" class="contacts__phone-text">
+							+7 905 399 74 44
+						</a>
 					</div>
-					<a href="tel:+79053997444" class="contacts__phone-text">
-						+7 905 399 74 44
-					</a>
-				</div>
-				<!-- address -->
-				<div class="contacts__address">
-					<div class="contacts__address-icon">
-						<svg class="svg-nav">
-							<use xlink:href="assets/img/sprite.svg#nav"></use>
-						</svg>
+					<!-- address -->
+					<div class="contacts__address">
+						<div class="contacts__address-icon">
+							<svg class="svg-nav">
+								<use xlink:href="assets/img/sprite.svg#nav"></use>
+							</svg>
+						</div>
+						<div class="contacts__address-text">
+							Волгоград, <span class="hl">ул. Революционная, д. 2Д, офис 11</span>
+						</div>
 					</div>
-					<div class="contacts__address-text">
-						Волгоград, <span class="hl">ул. Революционная, д. 2Д, офис 11</span>
+					<!-- mail -->
+					<div class="contacts__mail">
+						<div class="contacts__mail-icon">
+							<svg class="svg-mail">
+								<use xlink:href="assets/img/sprite.svg#mail"></use>
+							</svg>
+						</div>
+						<a href="mailto:info@raspil-lux.ru" class="contacts__mail-text">
+							info@raspil-lux.ru
+						</a>
+					</div>
+					<!-- button -->
+					<div class="contacts__button btn__wrap">
+						<button class="btn btn--contacts">Связаться</button>
 					</div>
 				</div>
-				<!-- mail -->
-				<div class="contacts__mail">
-					<div class="contacts__mail-icon">
-						<svg class="svg-mail">
-							<use xlink:href="assets/img/sprite.svg#mail"></use>
-						</svg>
+				
+				<div class="contacts__content-bottom-wrap">
+					<!-- social -->
+					<div class="contacts__social">
+						<a href="#" class="contacts__social-whatsapp">
+							<svg class="svg-whatsapp">
+								<use xlink:href="assets/img/sprite.svg#whatsapp"></use>
+							</svg>
+						</a>
+						<a href="#" class="contacts__social-telegramm">
+							<svg class="svg-telegramm">
+								<use xlink:href="assets/img/sprite.svg#telegramm"></use>
+							</svg>
+						</a>
+						<a href="#" class="contacts__social-instagramm">
+							<svg class="svg-instagramm">
+								<use xlink:href="assets/img/sprite.svg#instagramm"></use>
+							</svg>
+						</a>
+						<a href="#" class="contacts__social-facebook">
+							<svg class="svg-facebook">
+								<use xlink:href="assets/img/sprite.svg#facebook"></use>
+							</svg>
+						</a>
 					</div>
-					<a href="mailto:info@raspil-lux.ru" class="contacts__mail-text">
-						info@raspil-lux.ru
-					</a>
-				</div>
-				<!-- button -->
-				<div class="contacts__button btn__wrap">
-					<button class="btn btn--contacts">Связаться</button>
-				</div>
-				<!-- social -->
-				<div class="contacts__social">
-					<a href="#" class="contacts__social-whatsapp">
-						<svg class="svg-whatsapp">
-							<use xlink:href="assets/img/sprite.svg#whatsapp"></use>
-						</svg>
-					</a>
-					<a href="#" class="contacts__social-telegramm">
-						<svg class="svg-telegramm">
-							<use xlink:href="assets/img/sprite.svg#telegramm"></use>
-						</svg>
-					</a>
-					<a href="#" class="contacts__social-instagramm">
-						<svg class="svg-instagramm">
-							<use xlink:href="assets/img/sprite.svg#instagramm"></use>
-						</svg>
-					</a>
-					<a href="#" class="contacts__social-facebook">
-						<svg class="svg-facebook">
-							<use xlink:href="assets/img/sprite.svg#facebook"></use>
-						</svg>
-					</a>
 				</div>
 			</div>
 
 			<!-- map -->
 			<div class="contacts__map">
 				<div class="contacts__map-inner">
-					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ae32da16f8ace79568cf908e2da5cf40d9dbc0d251da857e09a8b7f8f22202e&amp;width=560&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0ae32da16f8ace79568cf908e2da5cf40d9dbc0d251da857e09a8b7f8f22202e&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
 				</div>
 			</div>
 		</div>
@@ -1186,6 +1232,10 @@
 	</div>
 </footer>
 
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
+
+
+
