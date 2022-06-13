@@ -14,3 +14,40 @@ window.addEventListener('load', () => {
     }, 1000);
 });
 
+
+
+/* ===== HAMBURGER MENU ===== */
+
+const hamb = document.querySelector("#hamb");
+const exit = document.querySelector("#icon-exit");
+const wrap = document.querySelector("#mobile-menu__wrap");
+const mobileMenu = document.querySelector("#mobile-menu");
+const body = document.body;
+ 
+// При клике на иконку hamb вызываем function hambHandler
+hamb.addEventListener("click", hambHandler);
+exit.addEventListener("click", closeOnClick);
+ 
+// Выполняем действия при клике
+function hambHandler(evt) {
+  evt.preventDefault();
+  // Переключаем классы элементов при клике
+  wrap.classList.toggle("active");
+  mobileMenu.classList.toggle("active");
+  body.classList.toggle("noscroll");
+}
+ 
+// Код для закрытия меню при нажатии на любую ссылку внутри меню
+const links = Array.from(mobileMenu.children);
+ 
+// Для каждого элемента меню при клике вызываем ф-ию
+links.forEach((link) => {
+  link.addEventListener("click", closeOnClick);
+});
+ 
+// Закрытие попапа при клике на меню
+function closeOnClick() {
+	mobileMenu.classList.remove("active");
+	wrap.classList.remove("active");
+	body.classList.remove("noscroll");
+}
