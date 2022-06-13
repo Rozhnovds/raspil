@@ -355,6 +355,10 @@
 	.contacts__map {
 		flex: 0 0 460px;
 	}
+	.contacts__mail-icon {
+		display: flex;
+		align-items: center;
+	}
 	.contacts .svg-whatsapp {
 		width: 26px;
 		height: 26px;
@@ -1740,8 +1744,18 @@
 	.contacts__phone {
 		margin-bottom: 5px;
 	}
+	.contacts__phone-icon {
+		margin-right: 14px;
+	}
+	.contacts__address-icon {
+		margin-right: 13px;
+		padding-top: 2px;
+	}
 	.contacts__address-text {
-		padding-right: 40px;
+		padding-right: 15px;
+	}
+	.contacts__mail-icon {
+		margin-right: 15px;
 	}
 	.contacts__button {
 		margin-top: 15px;

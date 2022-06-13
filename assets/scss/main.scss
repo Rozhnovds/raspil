@@ -25,6 +25,10 @@ $primary: #0260e8;
 /* ======== GLOBAL STYLES ======== */
 /* =============================== */
 
+/* html {
+	scroll-behavior: smooth;
+} */
+
 body {
 	position: relative; /* чтобы на header не попадали нижние блоки при прокрутке */
 
