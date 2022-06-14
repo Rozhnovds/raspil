@@ -542,6 +542,7 @@
 	}
 
 	body.noscroll {
+		height: 100vh;
 		overflow: hidden;
 	}
 
@@ -1550,6 +1551,23 @@
 
 	/* ======== 1. HEADER =========== */
 
+	.header {
+		// Можно оставить блок .header__social
+		&__social {
+			display: none;
+			flex: 0 0 60px;
+		}
+
+		&__inner {
+			justify-content: flex-start;
+		}
+	
+		&__logo {
+			margin-right: 10px;
+		}
+	}
+	
+
 	/* ======== 2. HERO-SECTION ======== */
 
 	.hero {
@@ -2476,3 +2494,6 @@
 @media (max-width: 320px) {
 	.container { max-width: 100%; }
 }
+
+
+

@@ -419,6 +419,7 @@
 	}
 
 	body.noscroll {
+		height: 100vh;
 		overflow: hidden;
 	}
 
@@ -1135,6 +1136,17 @@
 	}
 
 	/* ======== 1. HEADER =========== */
+	.header__social {
+		display: none;
+		flex: 0 0 60px;
+	}
+	.header__inner {
+		justify-content: flex-start;
+	}
+	.header__logo {
+		margin-right: 10px;
+	}
+
 	/* ======== 2. HERO-SECTION ======== */
 	.hero {
 		padding: 0 0 var(--section-inset);

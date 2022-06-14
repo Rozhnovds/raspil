@@ -51,3 +51,41 @@ function closeOnClick() {
 	wrap.classList.remove("active");
 	body.classList.remove("noscroll");
 }
+
+
+
+/* ===== ACCORDION ===== */
+
+const accordHeaders = document.querySelectorAll("[data-name='accordion-header']");
+const accordBodies = document.querySelectorAll("[data-name='accordion-body']");
+const accordIconsWraps = document.querySelectorAll("[data-name='accordion-icon-wrap']");
+
+if (accordHeaders) {
+	accordHeaders.forEach(function (el) {
+
+		el.addEventListener("click", function (e) {
+
+			if(el.nextElementSibling.classList.contains('active')) {
+
+				el.nextElementSibling.classList.toggle("active");
+				el.querySelector("[data-name='accordion-icon-wrap']").classList.toggle("active");
+
+			} else {
+
+				accordIconsWraps.forEach(function (item) {
+					item.classList.remove("active");
+				})
+
+				accordBodies.forEach(function (item) {
+					item.classList.remove("active");
+				});
+
+				el.nextElementSibling.classList.toggle("active");
+				el.querySelector("[data-name='accordion-icon-wrap']").classList.toggle("active");
+			}
+		});
+	});
+}
+
+
+

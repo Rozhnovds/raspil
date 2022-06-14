@@ -5,13 +5,15 @@
 /* =============================== */
 /* ======== GLOBAL STYLES ======== */
 /* =============================== */
-/* html {
-	scroll-behavior: smooth;
-} */
+html,
+body {
+	overflow-x: hidden;
+	max-width: 100%;
+}
+
 body {
 	position: relative;
 	/* чтобы на header не попадали нижние блоки при прокрутке */
-	width: 100%;
 	min-width: 320px;
 	overflow-x: hidden;
 	font-family: "Circe", Arial, sans-serif;
@@ -375,7 +377,8 @@ body {
 }
 .header__hamb {
 	display: none;
-	position: absolute;
+	position: fixed;
+	z-index: 5;
 	top: 20px;
 	right: 20px;
 }
@@ -457,10 +460,12 @@ body {
 	width: 260px;
 	height: 100%;
 	background-color: white;
+	overflow: auto;
 	transition: 0.3s;
 	transform: translateX(100%);
 }
 .mobile-menu__wrap {
+	display: block;
 	position: fixed;
 	z-index: 9;
 	top: 0;
@@ -1668,11 +1673,14 @@ body {
 	align-items: center;
 }
 .questions-faq__body {
-	padding-bottom: 40px;
+	/* padding-bottom: 40px; */
+	max-height: 0;
+	overflow: hidden;
 }
 .questions-faq__body-answer {
 	color: #3d3d3d;
 	line-height: 1.5;
+	padding-bottom: 40px;
 }
 .questions-faq__body-link, .questions-faq__body-link--underlined {
 	color: #0260e8;
@@ -1682,6 +1690,18 @@ body {
 	text-decoration-color: #0260e8;
 	text-decoration-thickness: 1px;
 	text-underline-offset: 7px;
+}
+
+.questions-faq__body.active {
+	max-height: 1999px;
+	transition: 1s;
+}
+
+.questions-faq__icon .icon-plus__wrap.active {
+	transform: rotate(-45deg);
+}
+.questions-faq__icon .icon-plus__wrap.active .icon-plus__element {
+	background-color: black;
 }
 
 .questions-faq__icon {
@@ -1695,19 +1715,21 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	/* &:active {
+		transition: all 0.2s;
+		transform: rotate(-45deg);
+
+		.icon-plus__element {
+			background-color: white;
+		}
+	} */
 }
 .questions-faq__icon .icon-plus__wrap:hover {
 	background-color: #0260e8;
 	border-radius: 50%;
 }
 .questions-faq__icon .icon-plus__wrap:hover .icon-plus__element {
-	background-color: white;
-}
-.questions-faq__icon .icon-plus__wrap:active {
-	transition: all 0.2s;
-	transform: rotate(-45deg);
-}
-.questions-faq__icon .icon-plus__wrap:active .icon-plus__element {
 	background-color: white;
 }
 .questions-faq__icon .icon-plus {
